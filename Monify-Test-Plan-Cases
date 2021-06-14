@@ -1,0 +1,285 @@
+1. Test Plan for Monefy App
+
+1.1 Overview
+
+This Test Plan is a document that describes the scope of testing for Monefy app.
+Monefy is a personal finanace application that makes money management easy.
+It can be used on multiple devices and os like andriod/ios.
+
+1.2 Scope
+
+    . This application is being tested for assignment purpose
+    . Following functionalities are in scope:
+        . Adding Expense
+        . Calculation of expenses
+        . Chart Distribution
+        . Curency change
+        . Modes
+        . Power usages
+        . File Export
+        . Multiple account
+        . Display mode
+        . Category changes
+
+2. Test Plan and Strategy
+
+2.1 Functional Testing
+
+2.1.1 Objective
+
+The main objective of functional testing is to verify whether every functionality  operates as intended. A entire module or a single functionality is in scope of functional testing.
+
+2.1.2 Entry Criteria
+
+
+. Final functional code has been updated in Test environment
+. the planning phase has been finished
+
+. testable units are available
+
+. all functional requirements have been defined
+
+. the unit testing environment has been set up
+
+2.1.3 Exit Criteria
+
+. all planned test cases have been covered
+. all the bugs found have been reviewed
+. the performance of key modules has been tested
+
+2.1.4 Logging Tests and Reporting
+
+Developers fix the defects found in each unit. If these defects are related to other modules and units, they must be reported.
+
+2.2 System Testing
+
+2.2.1 Objective
+
+System testing is generally conducted after Unit Testing. The objective of System Testing is to evaluate compliance of an integrated application with its requirements. 
+
+2.2.2 Testing Procedure
+
+. test cases preparation
+. test executions
+. bug reporting
+
+2.2.3 Types of System Testing
+
+2.2.3.1 Performance Testing
+
+Performing testing will be conducted to detect issues related to:
+
+. memory consumption
+. power utilization
+. network connectivity
+. operating in the background
+. switching between applications
+. memory leakage
+
+2.2.3.2 Interrupt Testing
+
+This testing type examines how an application reacts to interruption and resumes to its previous state.
+There are numerous reasons that can potentially interrupt the operation of an app
+such as:
+. phone call
+. messages
+. notifications
+. battery low
+. Multiscreen
+
+2.2.3.3 Usability Testing
+
+Usability testing is performed to check whether the application is easy to use and understand for the end-user.
+Such as:
+    . Category Icons
+    . Graph valuation
+    . Total expenses
+Note: These behaviours should be obvious to customer and easy to understand.
+
+2.2.3.4 Installation and Launch testing
+
+Installation testing aims to detect whether there are any issues during the installation, uninstallation, and updating process.
+. Launching Process
+. Time utilized in Launch
+. Memory utilized and freed during and after launch
+
+
+2.2.3.5 Functional Testing
+
+All the functions and features of the application are tested to verify whether they operate according to the specification.
+. Default Categories
+. Change in Category
+. Change in currency
+. Change display mode(Icons should be clearly visible and easy on the eyes)
+
+
+2.3 Expected/Actual Conditions
+
+All the conditions when tests pass or fail are defined and described.
+
+2.5 Test Report
+
+Test Report helps to summarize testing activity in a formal way. It should contain:
+
+. name and overview of an application
+. testing hardware and software environment
+. the number of test cases executed/passed/failed.
+For each issue that has been encountered, the following information is provided:
+
+. bug description
+. bug status (open, fixed, etc.)
+. bug location/module
+. steps to reproduce an issue
+
+4. Risks and Assumptions
+4.1 Risks
+
+The following risks may occur during the mobile app testing process:
+
+. availability of devices
+. new features and modification which have not been planned in advance
+. changes in requirements
+. delays in schedule
+
+4.2 Assumptions
+
+. each release is accompanied by a note with information about implemented features and their impact on the system
+. all blocker bugs receive the high priority status
+. all the bugs found are fixed before the next software release
+. all documents are up-to-date and delivered to the testing team in time
+. all necessary equipment and tools are provided and ready for testing
+. the test schedule is reviewed in case there are any obstacles for testing 
+5. Entry and Exit Criteria
+5.1 Entry Criteria
+
+. the development phase has been finished
+. requirements have been defined and approved
+. test design and tests plan have been created
+. the test environment has been set up
+. all necessary resources are available.
+
+5.2 Exit Criteria
+
+. tests cases are executed
+. the rate of tests cases passed is satisfactory, e.g., 95%
+. failed test cases are not related to crucial functionality
+. tests results have been accepted
+. critical defects have been fixed.
+
+6. Test Metrics
+Test metrics are quantitative measures that help to estimate the testing effort. The most common metrics are:
+
+. requirement coverage
+. test cases coverage
+. number of tests executed
+. number of defects found (taking into consideration their priorities and severities)
+. tests design effort
+. total test effort
+
+7. Deliverables
+The list of testing deliverables usually contains:
+
+. test plan
+. test cases documents
+. test strategy
+. test results
+. test summary report
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Test Cases with Priority:
+
+App Home screen should display header. - 	High
+Menu button should open left side-menu - High
+Left side menu should allow selection of a money space for displaying	- Medium
+Left side menu should allow selection of time period for transactions displaying.	- Medium
+It should be possible to open New expense window while left-side menu is open	- Medium
+It should be possible to navigate through the header buttons	- High
+App Logo should be displayed in the middle of the header. Under the logo the current money space is displayed	- Medium
+Double-arrow button should open New transfer screen	- High
+New transfer screen should have a "Back arrow button" to return to Home screen - Medium
+New transfer screen should have active input of transaction ammount	- High
+New transfer screen should display current date in format "Weekday, DD Month" -	Medium
+New transfer screen should have Add note input	- Medium
+New transfer screen should have button to invoke onscreen numeric keyboard	- High
+Numeric onscreen keyboard should have Add transfer button	- High
+New transfer screen should give possibility to select between the money space to transfer from - High
+New transfer screen should give possibility to select between the money space to transfer to	- High
+It should be possible to add new transfer transaction via Add Transfer button	- High
+New transfer screen should be closed	- High
+Toast message should appear with Cancel button	- Medium
+Transfer transactions are displayed in Balance history section	- Medium
+Vertical elipsis button should open Right-side menu	- High
+Right-side menu should display Categories, Accounts and Currencies menu items.	- Medium
+Tap on each menu item opens sub-menu	- Medium
+Categories sub-menu should allow user to add custom Category (Pro-Feature)	- Low
+Tap on item from the categories list opens Edit category screen	- Low
+Edit category screen should allow user to delete category	- Low
+It should be possible to Merge categories	- Low
+It should be possible to distinguish between Enabled and disabled categories	- Low
+It should be possible to edit category name	- Low
+It should be possible to change category icon (Pro-Feature)	- Medium
+Changes should be saved automatically	- Medium
+It should be possible to close Edit category screen via back arrow button	- Medium
+Toast message should appear. Message should confirm that the changes in category were saved. It should be possible to delete new category via Cancel button in toast.	- Medium
+Accounts sub-menu should allow user to create new Account	- Medium
+New account screen should allow user to give account name	- Medium
+New account screen should allow user to select currency (Pro-Feature)	- Low
+New account screen should allow user to setup custom currency rate (Pro-Feature)	- Low
+New account screen should allow user to setup Initial account balance and Initial balance date	- Medium
+New account screen should allow user to define whether new account balance should be Included in the total balance	- Medium
+New account screen should allow user to select Account icon	- Low
+Add button in the header of New account screen should create an account. Toast message appears. Message should confirm that the changes in account were saved. It should be possible to delete new account via Cancel button in toast. - 	High
+Accounts sub-menu should allow editing accounts	- Medium
+Edit account screen repeats New account screen	- Medium
+Edit account screen should allow user to delete account	- Medium
+Edit account screen should allow user to merge accounts	- Medium
+Edit account screen should allow user to enable/disable account	- Medium
+Accounts sub-menu should allow creating transfer transaction	- High
+Currencies (Pro-Feature) - Low
+Check if the "circle diagram" is built correctly - 	Low
+App Home screen should display Category actions. - High
+Category actions buttons should open "New expense" screen - High
+New expense screen should have a "Back arrow button" to return to Home screen	- Medium
+New expence screen shout display current date in format "Weekday, DD Month"	- Low
+New expence screen should have active input of transaction ammount	- High
+It should be possible to clear input value using "backspace" button	- Medium
+It should be possible to see transaction currency next to transaction ammount input	- Low
+It should be possible to enter transaction ammount using the onscreen numeric keyboard	- High
+Onscreen numeric keyboard should be displayed on the load of the screen meaning that the transaction ammount input is active - Medium
+It should be impossible to skip transaction ammount input (zero value is not accepted)	- High
+Input value should be validated	- High
+It should be impossible to perform mathematical operations in transaction input - Medium
+It should be possible to enter values with comma - Medium
+New expence screen should have input to "Add note" to transaction - 	Low
+Tapping on the "Add note" input displays onscreen character keyboard	- Low
+It should be possible to enter n characters in note	- Low
+It should be possible to finish typing note by tapping on green checkmakr button. Onscreen character keyboard is closed. "Add note" input should be inactive - Low
+New expense screen should display onscreen numeric keyboard	- High
+Onscreen numeric keyboard should influence only transaction ammount input	- High
+Onscreen numeric keyboard should have a proper layout	- Low
+New expenses screen shoult have button ADD '[CATEGORY NAME]'	- High
+Tapping on ADD button, if the transaction ammount is zero, highlights transaction ammount input	- High
+Tapping on ADD button with valid transaction ammount and any valid or empty note value creates "Expense transaction". New expense window is closed.	- High
+It should be possible to Cancel the transaction. For that after creating transaction the pop-up message should appear. The pop-up message should confirm the transaction. There should be Cancel button in the pop-up message. Cancel button deletes transaction. Pop-up message disappears after 10 sec. - Medium
+App Home screen should display Balance button	- Medium
+Balance button should display current balance (positive/negative; with currency; display two decimals)	- Medium
+Balance button should change it's color depending on the total balance	- Medium
+Tap on Balance button should display Balance section	- Medium
+Balance section displays history of transactions of the predefined time period	- Medium
+Transactions list is displayed by Categories.	- Medium
+Every Category has a total value of transactions found in this Category	- Medium
+Tap on Category expands list of transactions. Each transaction displays if it's debit or credit. Every transaction in a list displays transaction ammount with currency and the transaction date "DD Mon"	- Medium
+Second tap on Balance button hides the Balance section	- Medium
+App Home screen should display -/+ fab buttons	- High
+Tap on - fab button opens New expense screen	- High
+Tap on + fab button opens New income screen.	- High
+New Income screen repeats layout of New Expense screen with the following difference:	- High
+Before confirmation of the transaction user should select transaction category. Tap on Choose Category button to see available income categories. -	Medium
+It should be impossible to Choose Category while the transaction ammount is zero.	- High
+It should be possible to add custom income category. (Pro-Feature)	- Low
+Once the income category is selected positive transaction is created. New income screen is closed. Toast message is displayed. It is possible to delete new transaction via Cancel button on toast.	- High
+Balance button is updated after income transaction was created. Transaction is displayed in Balance history section.	- High
+Pro-Feature screen should appear every time a button with Pro-Feature is tapped.	- Medium
+Pro-Feature screen should display big CTA button to initiate purchase of unlimited use	- Medium
+Pro-Feature screen should display a list of features available after purchase of unlimited use	- Low
+
